@@ -7,6 +7,7 @@ import com.solid.state_driven_ui.view.states.State
 class DataLoaded(val dataLoaded: DataHolder) : State() {
     override fun updateUI(binding: ActivityMainBinding) {
         super.updateUI(binding)
+        binding.sampleTextView.text = dataLoaded.data
     }
 }
 
